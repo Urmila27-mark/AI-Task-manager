@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.3/dragula.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <button id="darkModeToggle">🌙 Toggle Dark Mode</button>
+        <h1>📌 AI Task Manager</h1>
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Enter a task...">
+            <select id="priority">
+                <option value="High">🔥 High Priority</option>
+                <option value="Medium">⚡ Medium Priority</option>
+                <option value="Low">✅ Low Priority</option>
+            </select>
+            <input type="datetime-local" id="deadline">
+            <button onclick="addTask()">➕ Add Task</button>
+        </div>
+        <ul id="taskList" class="drag-container"></ul>
+        <h3>💡 Productivity Insights: <span id="insights">0% completed</span></h3>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

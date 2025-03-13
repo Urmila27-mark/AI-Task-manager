@@ -1,0 +1,54 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    text-align: center;
+    transition: all 0.3s;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.task-input input, select, button {
+    width: 90%;
+    margin: 10px 0;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+button {
+    background: #ff9800;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+button:hover {
+    background: #e68900;
+}
+#taskList li {
+    background: white;
+    color: black;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#taskList li:hover {
+    background: #f1f1f1;
+}
+/* Dark Mode */
+.dark-mode {
+    background: #222;
+    color: #ddd;
+}
